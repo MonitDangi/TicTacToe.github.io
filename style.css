@@ -14,7 +14,6 @@ nav{
     height:80px;
     background-color: rgb(87, 107, 107);
     background-attachment: fixed;
-    display: flex;
     align-items: center;
 }
 nav h3{
@@ -26,12 +25,12 @@ nav h3{
     text-decoration-color:rgb(240, 90, 90);
 }
 .game-container{
-    display: flex;
     justify-content: center;
     margin-top:37.5px;
     justify-content: space-evenly;
 }
 .container{
+    padding:10px;
     display:grid;
     grid-template-rows: repeat(3,10vw) ;
     grid-template-columns: repeat(3,10vw) ;
@@ -39,7 +38,6 @@ nav h3{
 
 .box{
     align-items: center;
-    display: flex;
     justify-content: center;
     border:2px solid black;
     font-size:5vw;
@@ -72,10 +70,61 @@ nav h3{
 .imgbox img{
     width:0;
 }
+.info{
+    text-transform: uppercase;
+}
 #reset{
     margin-top:10px;
 }
 #input input{
     border-radius: 8px;
     padding:2px 5px;
+}
+.player1, .player2{
+    margin-top:5px;
+}
+.resetButtons{
+    width:85%;
+}
+.scores{
+    justify-content: space-around;
+}
+.score1 p, .score2 p{
+    margin-left:3px;
+    color:cadetblue;
+}
+
+
+
+
+
+
+.bl{
+    border-left:0;
+}
+.br{
+    border-right:0;
+}
+.bt{
+    border-top:0;
+}
+.bb{
+    border-bottom:0;
+}
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+@media screen and(max-width:2000px){
+    .game-container{
+        background-color: black;
+    }
 }
