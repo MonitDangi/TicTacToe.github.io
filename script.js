@@ -7,6 +7,9 @@
  let oplayer ='Player2';
  let scoreX = 0;
  let scoreO = 0;
+ move.volume = 1;
+ gameover.volume = 1;
+ music.volume=0.5;
 
  //function to show player names
  let name1 = document.querySelector('.nameX').innerText = xplayer;
@@ -69,7 +72,7 @@
 
 
 //Game logic
-//  music.play();
+ music.play();
  let boxes = document.getElementsByClassName("box");
  Array.from(boxes).forEach(element =>{
     let boxText = element.querySelector('.box-text');
